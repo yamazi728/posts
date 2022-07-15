@@ -1,0 +1,14 @@
+.postList {
+	margin-top: 3.125rem;
+}
+.postListTitle {
+	margin-bottom: 1.12rem;
+	font-weight: 900;
+	font-size: 46px;
+	color: #1e212c;
+}
+.postWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
