@@ -1,13 +1,12 @@
-.postList {
-	margin-top: 3.125rem;
+.postForm {
+	margin-top: 1.875rem 0 3.125rem 0;
 }
-.postListTitle {
-	margin-bottom: 1.12rem;
+.postFormTitle {
 	font-weight: 900;
-	font-size: 46px;
+	font-size: 30px;
 	color: #1e212c;
 }
-.postWrapper {
+.formWrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;

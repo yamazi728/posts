@@ -12,4 +12,56 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
-
+.filterComponent {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.modalWrapper {
+	position: relative;
+	display: none;
+	height: 100vh;
+	width: 100%;
+	background: gray;
+}
+.activeModal {
+	display: block;
+}
+.modal {
+	background: #ff3f3a;
+	position: absolute;
+	max-width: 500px;
+	top: 200px;
+	right: 435px;
+	border: 1px solid #ff3f3a;
+	padding: 50px;
+	border-radius: 16px;
+}
+.loadingSpinnerContainer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 5000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loadingSpinner {
+	width: 64px;
+	height: 64px;
+	border: 8px solid;
+	border-color: #ff3f3a transparent #ff3f3a transparent;
+	border-radius: 50%;
+	animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
